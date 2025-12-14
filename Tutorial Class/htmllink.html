@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Link</title>
+        
+        <style>
+            a:link     
+            {
+                color: hotpink;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+
+            a:visited
+            {
+                color: forestgreen;
+                background-color: brown;
+                text-decoration: underline;
+            }
+
+            a:active
+            {
+                color: paleturquoise;
+                background-color: black;
+            }
+
+            a:hover
+            {
+                background-color: aquamarine;
+            }
+           
+        </style>
+        <!-- hover akan override active background color so kena buat sekali a:active,a:hover atau pilih satu -->
+  
+    </head>
+    <body>
+        <h3>Internal Link</h3> 
+        <a href="images.html">HTML Images</a>
+
+        <h3>External Link</h3>
+        <a href="https://github.com/">Github</a>
+
+        <h3>Target Attribute</h3>
+        <!-- _self = click ke page sama , _blank= click ke new tab -->
+        
+        <a href="images.html" target="_self">Images</a>
+        <p></p>
+        <a href="https://www.vintagestory.at/" target="_blank">Vintage Story</a>
+        
+        <h3>Image as link</h3>
+        <a href="/image/goku.png" target="_blank" title="Goku Mad"><img src="button/button_hishamudin.png"></a>
+    
+        <h3>Button as Links</h3>
+        <button onclick="document.location='images.html'">HTML Image</button>
+
+    </body>
+
+    </body>
+</html>
